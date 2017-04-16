@@ -8,15 +8,15 @@ What it is basically is a huge file with dummy data compressed to many levels to
 
 This is a small script written in Python which generates such a zip bomb.
 
-##Usage
+## Usage
 `zipbomb.py n_levels out_zip_file`
 
-##Sample Run
+## Sample Run
 
 ```bash
 python zipbomb.py 10 out.zip  
 ```
-###Output
+### Output
 ```
 Compressed File Size: 30.58 KB  
 Size After Decompression: 10000000000 GB  
