@@ -36,8 +36,8 @@ def make_copies_and_compress(infile, outfile, n_copies):
 
 if __name__ == '__main__':
 	if len(sys.argv) < 3:
-		print 'Usage:\n'
-		print ' zipbomb.py n_levels out_zip_file'
+		print ('Usage:')
+		print (' zipbomb.py n_levels out_zip_file')
 		exit()
 	n_levels = int(sys.argv[1])
 	out_zip_file = sys.argv[2]
@@ -56,6 +56,6 @@ if __name__ == '__main__':
 		os.remove(out_zip_file)
 	os.rename('%d.zip'%(n_levels+1),out_zip_file)
 	end_time = time.time()
-	print 'Compressed File Size: %.2f KB'%(get_file_size(out_zip_file)/1024.0)
-	print 'Size After Decompression: %d GB'%decompressed_size
-	print 'Generation Time: %.2fs'%(end_time - start_time)
+	print ('Compressed File Size: %.2f KB'%(get_file_size(out_zip_file)/1024.0))
+	print ('Size After Decompression: %d GB'%decompressed_size)
+	print ('Generation Time: %.2fs'%(end_time - start_time))
